@@ -1,0 +1,118 @@
+{
+  "workers": [
+    {
+    "id": 1,
+    "name": "John Doe"
+    },
+    {
+    "id": 2,
+    "name": "Jane Doe"
+    },
+    {
+    "id": 3,
+    "name": "Mr. Smith"
+    },
+    {
+    "id": 4,
+    "name": "Patrick Stewart"
+    }
+  ],
+  "flights": [
+    {
+      "id": 1,
+      "num": "AF456",
+      "from": "Paris",
+      "to": "Hong Kong",
+      "from_date": "19/04/2023",
+      "to_date": "19/04/2023",
+      "plane": "Airbus A380",
+      "duration": 930,
+      "from_gate": 2,
+      "to_gate": 5
+      },
+      {
+        "workerId": 3,
+        "num": "FFFFFFFF",
+        "from": "Paris",
+        "to": "Hong Kong",
+        "from_date": "19/04/2023",
+        "to_date": "19/04/2023",
+        "plane": "Airbus A380",
+        "duration": 930,
+        "from_gate": 2,
+        "to_gate": 5
+        },
+      {
+      "workerId": 3,
+      "num": "HHHHHHHHHHH",
+      "from": "Paris",
+      "to": "Hong Kong",
+      "from_date": "19/04/2023",
+      "to_date": "19/04/2023",
+      "plane": "Airbus A380",
+      "duration": 930,
+      "from_gate": 2,
+      "to_gate": 5
+      },
+      {
+      "workerId": 3,
+      "num": "AF789",
+      "from": "Hong Kong",
+      "to": "Tokyo",
+      "from_date": "21/04/2023",
+      "to_date": "21/04/2023",
+      "plane": "Airbus A320",
+      "duration": 250,
+      "from_gate": 3,
+      "to_gate": 2
+      },
+      {
+      "workerId": 4,
+      "num": "AF1011",
+      "from": "Tokyo",
+      "to": "Paris",
+      "from_date": "23/04/2023",
+      "to_date": "24/04/2023",
+      "plane": "Airbus A380",
+      "duration": 840,
+      "from_gate": 6,
+      "to_gate": 1
+      },
+      {
+      "workerId": 2,
+      "num": "AF123",
+      "from": "Paris",
+      "to": "New York City",
+      "from_date": "25/04/2023",
+      "to_date": "25/04/2023",
+      "plane": "Airbus A380",
+      "duration": 540,
+      "from_gate": 5,
+      "to_gate": 1
+      },
+      {
+      "workerId": 2,
+      "num": "AF456",
+      "from": "New York City",
+      "to": "San Francisco",
+      "from_date": "27/04/2023",
+      "to_date": "27/04/2023",
+      "plane": "Airbus A320",
+      "duration": 360,
+      "from_gate": 3,
+      "to_gate": 6
+      },
+      {
+      "workerId": 2,
+      "num": "AF789",
+      "from": "San Francisco",
+      "to": "Paris",
+      "from_date": "30/04/2023",
+      "to_date": "01/05/2023",
+      "plane": "Airbus A380",
+      "duration": 720,
+      "from_gate": 7,
+      "to_gate": 2
+      }
+  ]
+}

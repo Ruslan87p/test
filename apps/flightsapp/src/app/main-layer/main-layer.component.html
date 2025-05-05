@@ -1,0 +1,10 @@
+<div class="main">
+  <app-users
+  [workers]="workers"
+  [workersFlights$]="workersFlights$.asObservable()"
+  (workerSelection)="workerSelection($event)"></app-users>
+</div>
+
+@if (error) {
+  <h3>Something went wrong</h3>
+}

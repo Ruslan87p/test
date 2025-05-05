@@ -1,0 +1,28 @@
+<div>
+  <table *ngIf="workersFlights | async as flights">
+    <thead>
+      <tr>
+        <th>Flight number</th>
+        <th>Origin</th>
+        <th>Origin date</th>
+        <th>Destination</th>
+        <th>Destination date</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- [class.selected]="flight.workerId === selectedFlightId" -->
+
+      <tr *ngFor="let flight of flights; index as i"
+      (click)="getFlightMoreDetails(flight)"
+      [class.selected]="flight === selected">
+
+        <td>{{ flight.num }}</td>
+        <td>{{ flight.from }}</td>
+        <td>{{ flight.from_date }}</td>
+        <td>{{ flight.to }}</td>
+        <td>{{ flight.to_date }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <section>
+   <div>
+        <!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+        <!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+      <h1>Workers</h1>
+      <li *ngFor="let worker of workers; trackBy: trackByWorkerId"
+      (click)="selectWorker(worker.id)"
+      class="worker"
+      [class.selected]="selectedWorkerId ? worker.id === selectedWorkerId : workers[0].id">
+        {{ worker.name }}
+      </li>
+   </div>
+
+   @if (error) {
+    <span>{{error.message}}</span>
+   }
+   <div class="active-information">
+    <h2>Active Flight</h2>
+    <div>
+      <app-list [workersFlights]="workersFlights$" (activeFlight)="activeFlight($event)"></app-list>
+      <app-detailst [activeFlight]="workersFlights$" [activeFlightDetails]="activeFlightDetails"></app-detailst>
+    </div>
+   </div>
+
+
+  </section>
+</div>

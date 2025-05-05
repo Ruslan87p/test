@@ -1,0 +1,20 @@
+<div *ngIf="activeFlightDetails">
+  <table class="flight-details-table">
+    <thead>
+      <tr>
+        <th>Plane number</th>
+        <th>Duration</th>
+        <th>Origin Date</th>
+        <th>Destination date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ activeFlightDetails.plane }}</td>
+        <td>{{ activeFlightDetails.duration }}</td>
+        <td>{{ activeFlightDetails.from_gate }}</td>
+        <td>{{ activeFlightDetails.to_gate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

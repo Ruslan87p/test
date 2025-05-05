@@ -1,0 +1,12 @@
+.selected {
+  background-color: #e5eaee;
+  border: 1px solid grey;
+}
+tbody tr:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
